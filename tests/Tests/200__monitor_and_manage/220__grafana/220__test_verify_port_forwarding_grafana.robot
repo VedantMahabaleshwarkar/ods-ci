@@ -24,7 +24,7 @@ Verify That MT-SRE Can Connect To Grafana Using Port Forwarding
 
     # Enable Port Forwarding
     ${PROC} =  Enable Access To Grafana Using OpenShift Port Forwarding
-    # Check if Grafna is UP and running
+    # Check if Grafana is UP and running
     ${response} =   Wait Until Grafana Page Is UP  TIMEOUT=7
     Should Contain   ${response}     "database": "ok",
     # Open Browser
